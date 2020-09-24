@@ -26,7 +26,7 @@ function global:au_GetLatest {
   $url = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
   $version = $url -split '\/' | Select-Object -Last 1
 
-  Write-Output $version
+  Write-Host "version " $version
 
   $url = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86.msi'
   $url64 = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86_64.msi'
