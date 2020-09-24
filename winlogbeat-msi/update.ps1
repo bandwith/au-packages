@@ -32,26 +32,10 @@ function global:au_GetLatest {
   $url = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86.msi'
   $url64 = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86_64.msi'
 
-  # $url = 'https://github.com/warmuuh/milkman/releases/download/' + $version + '/milkman-dist-plugins-bin.zip'
-  # $DownloadedFile = "$PSScriptRoot\milkman-dist-plugins-bin.zip"
-  # (New-Object System.Net.WebClient).DownloadFile($url, $DownloadedFile)
+  $CheckSum32 = (Invoke-WebRequest -Uri ($url + '.sha512')).content.split | Select-Object -First 1
+  $CheckSum64 = (Invoke-WebRequest -Uri ($url64 + '.sha512')).content.split | Select-Object -First 1
 
   Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
-  
-  # $UnzipDirectory = "$PSScriptRoot\milkman-dist-plugins-bin\"
-  # Expand-Archive -Path $DownloadedFile -DestinationPath $UnzipDirectory -Force
-  # Get-ChildItem -Path $UnzipDirectory  -Filter "$PackageName.jar" -Recurse | Select-Object -first 1 | Copy-Item -Destination "tools\$PackageName.jar"
-  # Remove-Item -Path "milkman-dist-plugins-bin.zip"
-  # Remove-Item -Path "milkman-dist-plugins-bin" -Recurse
-  # return @{ Version = $version; }
-
-
-  # $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  # $regex = "https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat--windows-x86_64.msi$"
-  # $url = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
-  # $version = $url -split '\/' | Select-Object -Last 1 -Skip 1
-  # Write-Host "Version: $version"
-  # $url = "https://github.com$url"
 
   return @{ Version = $version; Checksum32 = $CheckSum32; ChecksumType32 = 'sha512'; Checksum64 = $CheckSum64; ChecksumType64 = 'sha512'; Url32 = $url; Url64 = $url64 }
 }
