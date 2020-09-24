@@ -1,7 +1,7 @@
-[![](https://ci.appveyor.com/api/projects/status/github/bandwith/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/bandwith/chocolatey-packages)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/github/bandwith/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/bandwith/chocolatey-packages)
 [Update status](https://gist.github.com/bandwith/YOUR_GIST_ID_HERE)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[chocolatey/bandwith](https://chocolatey.org/profiles/bandwith)
+[![Chocolatey Profile](https://img.shields.io/badge/Chocolatey_Profile-bandwith-yellowgreen)](https://chocolatey.org/profiles/bandwith)
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
