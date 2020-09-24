@@ -6,17 +6,17 @@ $PackageName = 'winlogbeat'
 
 function global:au_SearchReplace {
   @{
-    "$($Latest.PackageName).nuspec" = @{
+    "$($Latest.PackageName)-msi.nuspec" = @{
       "(\<version\>).*?(\</version\>)"    = "`${1}$($Latest.Version)`$2"
       # "(^.+version=`")(\[.*\])(`".+$)"    = "`$1[$($Latest.Version)]`$3"
     }
     'tools\chocolateyInstall.ps1' = @{
       "(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
-      # "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-      # "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+      "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+      "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
       "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
-      # "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-      # "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
   }
 }
@@ -36,7 +36,7 @@ function global:au_GetLatest {
   # $DownloadedFile = "$PSScriptRoot\milkman-dist-plugins-bin.zip"
   # (New-Object System.Net.WebClient).DownloadFile($url, $DownloadedFile)
 
-  Invoke-WebRequest -Uri 'https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
+  Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
   
   # $UnzipDirectory = "$PSScriptRoot\milkman-dist-plugins-bin\"
   # Expand-Archive -Path $DownloadedFile -DestinationPath $UnzipDirectory -Force
