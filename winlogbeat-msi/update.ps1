@@ -6,7 +6,7 @@ $PackageName = 'winlogbeat'
 
 function global:au_SearchReplace {
   @{
-    'winlogbeat.nuspec' = @{
+    'winlogbeat-msi.nuspec' = @{
       "(^.+version=`")(\[.*\])(`".+$)"    = "`$1[$($Latest.Version)]`$3"
     }
     'tools\chocolateyInstall.ps1' = @{
