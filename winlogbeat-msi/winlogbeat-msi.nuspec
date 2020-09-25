@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>winlogbeat-msi</id>
-    <version>7.9.0</version>
+    <version>7.9.2.20200924</version>
     <title>winlogbeat</title>
     <authors>bandwith</authors>
     <owners>bandwith</owners>
