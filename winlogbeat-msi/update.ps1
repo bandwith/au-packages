@@ -11,12 +11,19 @@ function global:au_SearchReplace {
       # "(^.+version=`")(\[.*\])(`".+$)"    = "`$1[$($Latest.Version)]`$3"
     }
     'tools\chocolateyInstall.ps1' = @{
-      "(^[$]url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
-      "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-      "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-      "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.Url64)'"
-      "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      # "(^[$]url\s*=\s*)('.*')"                = "`$1'$($Latest.Url32)'"
+      "(?i)(^\s*url\s*=\s*)('.*')"            = "`$1'$($Latest.Url32)'"
+      "(?i)(^\s*checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+      "(?i)(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+      # "(^[$]checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+      # "(^[$]checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+
+      "(?i)(^\s*url64\s*=\s*)('.*')"            = "`$1'$($Latest.Url64)'"
+      # "(^[$]url64\s*=\s*)('.*')"              = "`$1'$($Latest.Url64)'"
+      "(?i)(^\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      "(?i)(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      # "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      # "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
   }
 }
