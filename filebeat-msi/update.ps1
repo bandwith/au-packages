@@ -37,8 +37,11 @@ function global:au_GetLatest {
   $url = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86.msi'
   $url64 = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86_64.msi'
 
-  $CheckSum32 = (Invoke-WebRequest -Uri ($url + '.sha512')).content.split | Select-Object -First 1
-  $CheckSum64 = (Invoke-WebRequest -Uri ($url64 + '.sha512')).content.split | Select-Object -First 1
+  Write-Host "URL: $url"
+  Write-Host "URL64: $url64"
+
+  $CheckSum32 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url + '.sha512')).content) -split ' ' | Select-Object -First 1
+  $CheckSum64 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url64 + '.sha512')).content) -split ' ' | Select-Object -First 1
 
   Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
   
