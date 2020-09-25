@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>packetbeat-msi</id>
+    <version>7.9.2.20200924</version>
+    <title>packetbeat</title>
+    <authors>bandwith</authors>
+    <owners>bandwith</owners>
+    <projectUrl>https://www.elastic.co/beats/packetbeat</projectUrl>
+    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltafdcc4bf9e229b98/5bd9e3f9b2202f965f253391/icon-packetbeat-bb.svg</iconUrl>
+    <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Lightweight shipper for network data
+
+Monitoring your network traffic is critical to gaining observability over your environment — ensuring high levels of performance and security. Packetbeat is a lightweight network packet analyzer that sends data from your hosts and containers to Logstash or Elasticsearch.</description>
+    <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
+    <releaseNotes />
+    <copyright />
+    <tags>msi packetbeat beat beats elastic admin</tags>
+    <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bandwith/chocolatey-packages/</packageSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/packetbeat/</docsUrl>
+  </metadata>
+</package>
