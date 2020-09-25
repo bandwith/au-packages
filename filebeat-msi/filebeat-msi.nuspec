@@ -7,7 +7,7 @@
     <authors>bandwith</authors>
     <owners>bandwith</owners>
     <projectUrl>https://www.elastic.co/beats/filebeat</projectUrl>
-    <iconUrl>https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt737398364d53baec/5d67096af2a4f82e4479c080/icon-metricbeat-64-color.svg</iconUrl>
+    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltd1986faecefe2760/5bd9e39ccc850d3e584b7cc4/icon-filebeat-bb.svg</iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Collect Windows Event Logs
