@@ -1,6 +1,5 @@
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/bandwith/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/bandwith/chocolatey-packages)
-[![AU Update status](https://img.shields.io/badge/AU%20packages-6-red.svg)](https://gist.github.com/bandwith/80e4858e724497acbd838b5e5a7b465c)
-[![](http://transparent-favicon.info/favicon.ico)](#)
+[![AU package status](https://img.shields.io/badge/AU%20package%20status--green.svg)](https://gist.github.com/bandwith/80e4858e724497acbd838b5e5a7b465c)
 [![Chocolatey Profile](https://img.shields.io/badge/Chocolatey_Profile-bandwith-yellowgreen)](https://chocolatey.org/profiles/bandwith)
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
