@@ -1,5 +1,5 @@
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/bandwith/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/bandwith/chocolatey-packages)
-[Update status](https://gist.github.com/bandwith/YOUR_GIST_ID_HERE)
+[Update status](https://gist.github.com/bandwith/80e4858e724497acbd838b5e5a7b465c)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [![Chocolatey Profile](https://img.shields.io/badge/Chocolatey_Profile-bandwith-yellowgreen)](https://chocolatey.org/profiles/bandwith)
 
