@@ -7,7 +7,7 @@
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
     <projectUrl>https://www.elastic.co/beats/auditbeat</projectUrl>
-    <iconUrl>https://cdn.statically.io/gh/bandwith/chocolatey-packages/icon/elastic/beats-logo-color-64px.svg.min</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/bandwith/chocolatey-packages/cbcd7fe5/icon/elastic/beats-logo-color-64px.svg/iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Lightweight shipper for audit data
