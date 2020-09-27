@@ -2,12 +2,12 @@ import-module au
 
 $releases = "http://github.com/elastic/beats/releases"
 
-$PackageName = 'heartbeat'
+$PackageName = 'filebeat'
 
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(\<version\>).*?(\</version\>)"    = "`${1}$($Latest.Version)`$2"
+      "(\<version\>).*?(\</version\>)"        = "`${1}$($Latest.Version)-beta`$2"
     }
     'tools\chocolateyInstall.ps1' = @{
       "(^[$]url\s*=\s*)('.*')"                = "`$1'$($Latest.Url32)'"
@@ -32,11 +32,14 @@ function global:au_GetLatest {
   $url = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86.msi'
   $url64 = 'https://artifacts.elastic.co/downloads/beats/' + $PackageName + '/' + $PackageName + '-' + $version + '-windows-x86_64.msi'
 
+  Write-Host "URL: $url"
+  Write-Host "URL64: $url64"
+
   $CheckSum32 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url + '.sha512')).content) -split ' ' | Select-Object -First 1
   $CheckSum64 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url64 + '.sha512')).content) -split ' ' | Select-Object -First 1
 
   Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
-
+  
   return @{ Version = $version; Checksum32 = $CheckSum32; ChecksumType32 = 'sha512'; Checksum64 = $CheckSum64; ChecksumType64 = 'sha512'; Url32 = $url; Url64 = $url64 }
 }
 

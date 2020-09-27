@@ -7,7 +7,7 @@ $PackageName = 'metricbeat'
 function global:au_SearchReplace {
   @{
     "$($Latest.PackageName).nuspec" = @{
-      "(\<version\>).*?(\</version\>)"        = "`${1}$($Latest.Version)`$2"
+      "(\<version\>).*?(\</version\>)"        = "`${1}$($Latest.Version)-beta`$2"
     }
     'tools\chocolateyInstall.ps1' = @{
       "(^[$]url\s*=\s*)('.*')"                = "`$1'$($Latest.Url32)'"

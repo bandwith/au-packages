@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>filebeat.msi</id>
+    <id>metricbeat.install</id>
     <version>7.9.0</version>
-    <title>filebeat</title>
+    <title>metricbeat (Install)</title>
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
-    <projectUrl>https://www.elastic.co/beats/filebeat</projectUrl>
-    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltd1986faecefe2760/5bd9e39ccc850d3e584b7cc4/icon-filebeat-bb.svg</iconUrl>
+    <projectUrl>https://www.elastic.co/beats/winlogbeat</projectUrl>
+    <iconUrl>https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt737398364d53baec/5d67096af2a4f82e4479c080/icon-metricbeat-64-color.svg</iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Lightweight shipper for logs
+    <description>Lightweight shipper for metrics
 
-Forget using SSH when you have tens, hundreds, or even thousands of servers, virtual machines, and containers generating logs. Filebeat helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files.</description>
+Collect metrics from your systems and services. From CPU to memory, Redis to NGINX, and much more, Metricbeat is a lightweight way to send system and service statistics.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
     <releaseNotes />
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
-    <tags>msi filebeat beat beats elastic admin</tags>
+    <tags>msi metricbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>
     <packageSourceUrl>https://github.com/bandwith/chocolatey-packages/</packageSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/filebeat/</docsUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

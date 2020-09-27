@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>metricbeat.msi</id>
+    <id>winlogbeat.install</id>
     <version>7.9.0</version>
-    <title>metricbeat</title>
+    <title>winlogbeat</title>
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
     <projectUrl>https://www.elastic.co/beats/winlogbeat</projectUrl>
-    <iconUrl>https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt737398364d53baec/5d67096af2a4f82e4479c080/icon-metricbeat-64-color.svg</iconUrl>
+    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltc7dbc20cb410c803/5bd9e3e734f567415a6543fb/icon-winlogbeat-bb.svg</iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Lightweight shipper for metrics
+    <description>Collect Windows Event Logs
 
-Collect metrics from your systems and services. From CPU to memory, Redis to NGINX, and much more, Metricbeat is a lightweight way to send system and service statistics.</description>
+Harness the richness of system, application, and security information from Windows event logs using a lightweight Winlogbeat data collector. Ship events directly to Elasticsearch or parse and enrich them using Logstash prior to visualizing results in Kibana.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
     <releaseNotes />
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
-    <tags>msi metricbeat beat beats elastic admin</tags>
+    <tags>msi winlogbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>
     <packageSourceUrl>https://github.com/bandwith/chocolatey-packages/</packageSourceUrl>
-    <docsUrl>https://www.elastic.co/guide/en/beats/metricbeat/</docsUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/winlogbeat/</docsUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
