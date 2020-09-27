@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 
-$packageName  = 'auditbeat-msi'
+$packageName  = 'auditbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.2-windows-x86.msi'
 $url64        = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.9.2-windows-x86_64.msi'

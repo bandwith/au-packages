@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 
-$packageName  = 'winlogbeat-msi'
+$packageName  = 'winlogbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.9.2-windows-x86.msi'
 $url64        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.9.2-windows-x86_64.msi'

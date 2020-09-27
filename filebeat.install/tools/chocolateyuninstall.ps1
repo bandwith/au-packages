@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'; # stop on all errors
 
-$packageName = 'filebeat-msi'
+$packageName = 'filebeat.install'
 $softwareName = 'Beats filebeat*' #part or all of the Display Name as you see it in Programs and Features. It should be enough to be unique
 $installerType = 'MSI'
 $silentArgs = '/qn /norestart'
