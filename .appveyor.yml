@@ -45,7 +45,7 @@ environment:
     secure: f8yKH5UfuCCRaKhdOPR9asvZA0gDU99qoVx8vuM99VTLO6BnfHpyA2PwjVrsFLit # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "bandwith@gmail.com"
+- git config --global user.email "62576+bandwith@users.noreply.github.com"
 - git config --global user.name "bandwith"
 - git config --global core.safecrlf true
 
