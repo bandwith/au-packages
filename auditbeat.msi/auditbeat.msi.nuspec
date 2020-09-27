@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>auditbeat.msi</id>
+    <version>7.9.0</version>
+    <title>auditbeat</title>
+    <authors>Elasticsearch</authors>
+    <owners>Sam Kuonen</owners>
+    <projectUrl>https://www.elastic.co/beats/auditbeat</projectUrl>
+    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/blt1b4de16c742cd2bf/5bd9e4ab4ed46d9b5fbadd0e/icon-auditbeat-bb.svg</iconUrl>
+    <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Lightweight shipper for audit data
+
+Collect your audit framework data and monitor the integrity of your files. Auditbeat ships these events in real time to the rest of the Elastic Stack for further analysis.</description>
+    <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
+    <releaseNotes />
+    <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
+    <tags>msi auditbeat beat beats elastic admin</tags>
+    <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>
+    <packageSourceUrl>https://github.com/bandwith/chocolatey-packages/</packageSourceUrl>
+    <docsUrl>https://www.elastic.co/guide/en/beats/auditbeat/</docsUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
