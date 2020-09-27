@@ -7,7 +7,7 @@
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
     <projectUrl>https://www.elastic.co/beats/filebeat</projectUrl>
-    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltd1986faecefe2760/5bd9e39ccc850d3e584b7cc4/icon-filebeat-bb.svg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/bandwith/chocolatey-packages/icon/elastic/beats-logo-color-64px.svg.min</iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Lightweight shipper for logs

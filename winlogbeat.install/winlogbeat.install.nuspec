@@ -7,7 +7,7 @@
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
     <projectUrl>https://www.elastic.co/beats/winlogbeat</projectUrl>
-    <iconUrl>https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/bltc7dbc20cb410c803/5bd9e3e734f567415a6543fb/icon-winlogbeat-bb.svg</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/bandwith/chocolatey-packages/icon/elastic/beats-logo-color-64px.svg.min</iconUrl>
     <licenseUrl>https://github.com/elastic/beats/tree/7.9/licenses/ELASTIC-LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Collect Windows Event Logs
