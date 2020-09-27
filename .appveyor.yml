@@ -12,7 +12,7 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  au_version:
+  au_version: master
   au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
@@ -35,6 +35,7 @@ environment:
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
   gist_id:
+    secure: v1yb7KHWikaITrHPmG5uCuPxDBMRA1NiiidEtgkdJS2KUXmAFuNXT92aXt9Qppi2
 
   # Force test: gist id for test results
   gist_id_test:
@@ -64,7 +65,7 @@ install:
     '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
 
 # Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
-- cinst chocolatey-core.extension
+# - cinst chocolatey-core.extension
     
 build_script:
 - ps: |
