@@ -14,7 +14,7 @@
 
 Harness the richness of system, application, and security information from Windows event logs using a lightweight Winlogbeat data collector. Ship events directly to Elasticsearch or parse and enrich them using Logstash prior to visualizing results in Kibana.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
-    <releaseNotes />
+    <releaseNotes>https://www.elastic.co/guide/en/beats/libbeat/current/release-notes.html</releaseNotes>
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
     <tags>msi winlogbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>

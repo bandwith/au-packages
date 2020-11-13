@@ -14,7 +14,7 @@
 
 Collect metrics from your systems and services. From CPU to memory, Redis to NGINX, and much more, Metricbeat is a lightweight way to send system and service statistics.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
-    <releaseNotes />
+    <releaseNotes>https://www.elastic.co/guide/en/beats/libbeat/current/release-notes.html</releaseNotes>
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
     <tags>msi metricbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>

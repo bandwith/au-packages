@@ -14,7 +14,7 @@
 
 Monitoring your network traffic is critical to gaining observability over your environment — ensuring high levels of performance and security. Packetbeat is a lightweight network packet analyzer that sends data from your hosts and containers to Logstash or Elasticsearch.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
-    <releaseNotes />
+    <releaseNotes>https://www.elastic.co/guide/en/beats/libbeat/current/release-notes.html</releaseNotes>
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
     <tags>msi packetbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>

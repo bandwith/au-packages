@@ -14,7 +14,7 @@
 
 Forget using SSH when you have tens, hundreds, or even thousands of servers, virtual machines, and containers generating logs. Filebeat helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
-    <releaseNotes />
+    <releaseNotes>https://www.elastic.co/guide/en/beats/libbeat/current/release-notes.html</releaseNotes>
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
     <tags>msi filebeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>

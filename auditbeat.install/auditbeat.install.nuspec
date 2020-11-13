@@ -14,7 +14,7 @@
 
 Collect your audit framework data and monitor the integrity of your files. Auditbeat ships these events in real time to the rest of the Elastic Stack for further analysis.</description>
     <summary>Beats are open source data shippers that you install as agents on your servers to send operational data to Elasticsearch.</summary>
-    <releaseNotes />
+    <releaseNotes>https://www.elastic.co/guide/en/beats/libbeat/current/release-notes.html</releaseNotes>
     <copyright>2020. Elasticsearch B.V. All Rights Reserved</copyright>
     <tags>msi auditbeat beat beats elastic admin</tags>
     <projectSourceUrl>https://github.com/elastic/beats</projectSourceUrl>
