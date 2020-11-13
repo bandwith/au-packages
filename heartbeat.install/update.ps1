@@ -35,7 +35,7 @@ function global:au_GetLatest {
   $CheckSum32 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url + '.sha512')).content) -split ' ' | Select-Object -First 1
   $CheckSum64 = [System.Text.Encoding]::Default.GetString((Invoke-WebRequest -Uri ($url64 + '.sha512')).content) -split ' ' | Select-Object -First 1
 
-  Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/7.9/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
+  Invoke-WebRequest -Uri 'https://github.com/elastic/beats/raw/master/licenses/ELASTIC-LICENSE.txt' -OutFile 'tools\ELASTIC-LICENSE.txt'
 
   return @{ Version = $version; Checksum32 = $CheckSum32; ChecksumType32 = 'sha512'; Checksum64 = $CheckSum64; ChecksumType64 = 'sha512'; Url32 = $url; Url64 = $url64 }
 }
