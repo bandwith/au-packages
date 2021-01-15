@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'filebeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.1-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.1-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.2-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.2-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats filebeat*'
-  checksum       = 'bf5598f30362bfe7ffc019679a316633ca839edb4355aa3e53ea8b822d319f5394730f04820017452daddffc310f5ca732104e02b6d489b7c417080cf08a4f8f'
+  checksum       = '22673bd25f19e3fb3c4ef4c58e3e5ab462182ff45619d86f8215ae609d5091cd16a90b32669d84c2aba184bb68e2e3c4da469bc19db9a355d05dc0f67f525eaf'
   checksumType   = 'sha512'
-  checksum64     = '6379accc9f095967dee3521ac3ff0fa45fb3e51b4ab20ec285f147ec9784254a6253f047dcbcf7f07057faed4d7919de48d2657bc7791c50911086854f8b272b'
+  checksum64     = '427269136f77f6f1b0b0375dac5cf81ac83b02a9a911ad3072b5cc62d05e90193ecde228b85b396fcc99c51c753b5bcd9d2cd0400e5f5fe6e6ac17d049581aab'
   checksumType64 = 'sha512'
 }
 
