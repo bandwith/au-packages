@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>filebeat.install</id>
-    <version>7.12.1-beta</version>
+    <version>7.13.0-beta</version>
     <title>filebeat (Install)</title>
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
