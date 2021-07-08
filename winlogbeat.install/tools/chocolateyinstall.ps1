@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'winlogbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.13.2-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.13.2-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.13.3-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.13.3-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats winlogbeat*'
-  checksum       = '246fe57ef1a89ec4a496552c980969c762289bd90f949897ce55ae749c1d1bbd4107be04bac77dbcb5d1a97cec7cf921013f37011b598de0943c3f0e7bc11a05'
+  checksum       = '2e33bdfa4c1e98421784a909744a76965484ef30138d9d9bc7dc0213d50102ef4b41ae089f65d10ed7cab55fffaf8e49cfa96d78d2bddff8f460360b1864a1a9'
   checksumType   = 'sha512'
-  checksum64     = '3008877ea3ea3aacd2d1593526aeef320b1db7f699892466dd03818cf58b222325b6a74d189b193e2aeffbddd01511bd23a479379fd453f59e37d38f62a1644a'
+  checksum64     = 'db854563e665b5b37473261f0b757fb45b505a83517022aee567b6e84e2f5993053ca8c124b6a3377c790e3375110d980d2079bdf917090a5bf2ed6bf479458e'
   checksumType64 = 'sha512'
 }
 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>heartbeat.install</id>
-    <version>7.13.2-beta</version>
+    <version>7.13.3-beta</version>
     <title>heartbeat (Install)</title>
     <authors>Elasticsearch</authors>
     <owners>Sam Kuonen</owners>
