@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'metricbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.13.3-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.13.3-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.13.4-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.13.4-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats metricbeat*'
-  checksum       = '969a4dbef7ccb0788aae5f11933b8b5ba5f5c0c2b424d8b7eaebd6f2aebac11b5bb7bc10c851e1ef703f92a59fe4299361c3657de1323b5e9e8a32f313ac147f'
+  checksum       = 'e2db9417d0b70f80853f04b98e5f3ec3905b8d204405edaa7e2d1f3f82249019262fbfc50d89135e9184ed02c78196b09b42cd4b101b6c101ee4a8952302b394'
   checksumType   = 'sha512'
-  checksum64     = 'fd4c3970b092b37bf476ebe71f30ffde808a6d2fe9aa23e1b467c5202e016f5743dcfe4f97697ab9e0267dec90aaac6c26b1a080b682a3700fc6ea9ecddd63ed'
+  checksum64     = '02e6771766066aeba9c03564927790148c8beb566d3be098566b20ff889ba00eea4f7258e779d9fa1d75477184a0b8877723a4bd0ab4f936e4056fb02e0437d0'
   checksumType64 = 'sha512'
 }
 

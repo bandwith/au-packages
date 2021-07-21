@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'auditbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.13.3-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.13.3-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.13.4-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/auditbeat/auditbeat-7.13.4-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats auditbeat*'
-  checksum       = '6aa30d5d94e7420beff9b2db9e39b83491ca23fbf770e404137e8046058becb3b76cfa4558826fed81b0527882abfb64ae46035e1c8601f5f8924a279deaa053'
+  checksum       = '5aa4587cecb4c6560c5da1bffc63a03faae154e96eb2656ab37d82afcdcdf8dabe39c03e1577fd882991d9bdf530a0b7695dc6d68952a09718cb3ed4b69d43f4'
   checksumType   = 'sha512'
-  checksum64     = '6886b460cc10393d1f5604051b5243aaca48666f0886b2b4331011737efcb38a567515e2fe8f872d1f70470bfbf473813bbbd69da8ebcdcb2564a571fd941add'
+  checksum64     = '6ef6ca6c32a1a4b4ad87c323193376c2acbbcef8ccf53b122b3171c2fcac6203844f9494ade931e544037d1e51f06afb2b261e01c7e2652b59efd6e2892757d2'
   checksumType64 = 'sha512'
 }
 
