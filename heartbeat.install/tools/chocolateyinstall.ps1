@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'heartbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/heartbeat/heartbeat-7.14.0-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/heartbeat/heartbeat-7.14.0-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/heartbeat/heartbeat-7.14.1-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/heartbeat/heartbeat-7.14.1-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats heartbeat*'
-  checksum       = 'be6f013711da4513bca183db85d5ee83ddf2927fec80ad749ebc34eadf168e28332b6c72625cadb45f4fed117c774843a48f3f8852fa31b2f9a0213f433fcf29'
+  checksum       = 'c80efc953f55f056c72626969386a56195451a744a6c3cfb460d08dd12de1dcd54e56c7d9ca365025238e6b189555fe8ef66e5b2c7fd24004d5c25d11cd7262a'
   checksumType   = 'sha512'
-  checksum64     = 'c77fa80f1def90ff06a21711ef9731a612dee72b00f4b365958ff81fd70a060707bbefee9b266b026f3a5779e21acdc5c6a8532ddc4f1b1ecc12814ea569a273'
+  checksum64     = '4e78ddfa7bf0da6e842686510e5d039ece53ecbf1b7d780d1f725148c5b4752e18cc957b3c419d3f774e42ac198ef6296153671bc46b1a72547ed4874bafba2d'
   checksumType64 = 'sha512'
 }
 
