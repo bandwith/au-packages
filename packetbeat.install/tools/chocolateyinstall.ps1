@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop';
 
 $packageName  = 'packetbeat.install'
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.17.7-windows-x86.msi'
-$url64        = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.17.7-windows-x86_64.msi'
+$url          = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.17.9-windows-x86.msi'
+$url64        = 'https://artifacts.elastic.co/downloads/beats/packetbeat/packetbeat-7.17.9-windows-x86_64.msi'
 
 $packageArgs = @{
   packageName    = $packageName
@@ -14,9 +14,9 @@ $packageArgs = @{
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 3010, 1641)
   softwareName   = 'Beats packetbeat*'
-  checksum       = '72ded7ae77c4251357ad46657a9dddd8765cb193dc403d57b8baef46283a78ad4540450a396c037275ca340d9e4a558d0e4616c345c9cb7694e82eb1701e2a02'
+  checksum       = '37cb05e3eb5b74798ca22887ed376796d0064d4f72a56bc67078b620fe45bdc486a44acec114ae13c6cef66a984fa5fa53a1ff27690762114c35471591506433'
   checksumType   = 'sha512'
-  checksum64     = '18faba9c58dafb986f6494687fc4d75724782a66357b6841e4e45188a80d107afbb25ea7d3b4165ae467d19fadb2f8b4357df26feffb6b89d26f62489b584918'
+  checksum64     = 'c871f3fb2fe2cfdf6b0c4d41e700b533e73ed5cea853a080aa747008bf5110380f02593336b3ba830f2d9eeba579e2d578ab44f259205a388dbe18ef527e9122'
   checksumType64 = 'sha512'
 }
 
